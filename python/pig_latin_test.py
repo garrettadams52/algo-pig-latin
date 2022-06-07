@@ -15,3 +15,13 @@ print(f"translates many words: {translate('the quick brown fox') == 'ethay ickqu
 # write a test asserting that capitalized words are still capitalized
 # (but with a different initial capital letter, of course) retain the
 # punctuation from the original phrase
+
+print(f"translates a word beginning with a vowel: {translate('apple')}")
+print(f"translates a word beginning with a consonant: {translate('banana')}")
+print(f"translates a word beginning with two consonants: {translate('cherry')}")
+print(f"translates two words: {translate('eat pie') == 'eatay iepay'}")
+print(f"translates a word beginning with three consonants: {translate('three')}")
+print(f"counts 'sch' as a single phoneme: {translate('school')}")
+print(f"counts 'qu' as a single phoneme: {translate('quiet')}")
+print(f"counts 'qu' as a consonant even when it's preceded by a consonant: {translate('square')}")
+print(f"translates many words: {translate('the quick brown fox')}")
